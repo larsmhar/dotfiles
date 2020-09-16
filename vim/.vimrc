@@ -10,12 +10,15 @@ call vundle#begin()
 Plugin 'VundlenVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'lervag/vimtex'
+Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 "Plugin 'dylanaraps/wal'
 
 call vundle#end()
-filetype plugin on
 "execute pathogen#infect()
 
+filetype plugin on
 
 set nocompatible		" use vim defaults instead of vi
 set encoding=utf-8		" always encode in utf
@@ -43,5 +46,17 @@ set background=light
 "colorscheme badwolf
 
 "hi LineNr guibg=grey
+
+" Makes the line numbers clear
 highlight clear LineNr
 highlight clear CursorLineNr
+
+
+" NERDTree
+" Sets the default of .vim files to be interpreted
+" as latex files
+let g:tex_flavor = 'latex'
+nmap <C-n> :NERDTreeToggle<CR>
+
+
+
