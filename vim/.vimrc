@@ -51,12 +51,19 @@ set background=light
 highlight clear LineNr
 highlight clear CursorLineNr
 
+" Maps leader to space for easier usage
+let mapleader = " " 
+
 
 " NERDTree
 " Sets the default of .vim files to be interpreted
 " as latex files
 let g:tex_flavor = 'latex'
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <leader>d :NERDTreeToggle<CR>
 
+" fzf
+nmap <leader>f :Files<CR>
+nmap <leader>g :GFiles<CR>
+nmap <leader>/ :Lines<CR>
 
 
