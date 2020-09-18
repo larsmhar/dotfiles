@@ -1,6 +1,14 @@
+"set background=dark " dark | light "
+set background=light
+syntax on
+"set background=dark
+"colorscheme solarized
+"colorscheme badwolf
+
+
+
 set number
 set relativenumber
-syntax enable
 set nocompatible
 filetype off
 
@@ -17,6 +25,8 @@ Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 "execute pathogen#infect()
+let base16colorspace=256
+colorscheme base16-default-dark
 
 filetype plugin on
 
@@ -37,19 +47,11 @@ set tabstop=2						" spaces for <Tab>
 set t_Co=256
 
 
-let base16colorspace=256
-colorscheme base16-default-dark
-"set background=dark " dark | light "
-set background=light
-"set background=dark
-"colorscheme solarized
-"colorscheme badwolf
-
 "hi LineNr guibg=grey
 
 " Makes the line numbers clear
-highlight clear LineNr
-highlight clear CursorLineNr
+"highlight clear LineNr
+"highlight clear CursorLineNr
 
 " Maps leader to space for easier usage
 let mapleader = " " 
