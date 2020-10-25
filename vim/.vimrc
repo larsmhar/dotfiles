@@ -21,9 +21,15 @@ Plugin 'lervag/vimtex'
 Plugin 'preservim/nerdtree'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'dylanaraps/wal'
 
 call vundle#end()
+
+" Vim-airline theme
+" let g:airline_theme='gruvbox'
+
 "execute pathogen#infect()
 let base16colorspace=256
 colorscheme base16-default-dark
