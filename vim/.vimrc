@@ -74,4 +74,8 @@ nmap <leader>f :Files<CR>
 nmap <leader>g :GFiles<CR>
 nmap <leader>/ :Lines<CR>
 
+" O (shift + o) takes too long, this fixes
+set timeout ttimeout
+set timeoutlen=500
+set ttimeoutlen=20
 
