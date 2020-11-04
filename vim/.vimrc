@@ -15,6 +15,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+highlight clear SignColumn
+
 Plugin 'VundlenVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'lervag/vimtex'
@@ -64,10 +66,11 @@ let mapleader = " "
 
 
 " NERDTree
+nmap <leader>d :NERDTreeToggle<CR>
 " Sets the default of .vim files to be interpreted
 " as latex files
 let g:tex_flavor = 'latex'
-nmap <leader>d :NERDTreeToggle<CR>
+autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
 
 " fzf
 nmap <leader>f :Files<CR>
