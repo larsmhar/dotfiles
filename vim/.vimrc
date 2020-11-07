@@ -54,9 +54,13 @@ set tabstop=2						" spaces for <Tab>
 "set tabstop=4						" spaces for <Tab>
 set t_Co=256
 
+" Sets j and k to g(j|k), but not when doing
+" commands with relative line numbers such as 15 j
+noremap <expr> j (v:count? 'j' : 'gj')
+noremap <expr> k (v:count? 'k' : 'gk')
 
 "hi LineNr guibg=grey
-
+"
 " Makes the line numbers clear
 "highlight clear LineNr
 "highlight clear CursorLineNr
