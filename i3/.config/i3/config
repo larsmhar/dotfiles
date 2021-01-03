@@ -241,7 +241,7 @@ bindsym $mod+r mode "resize"
 
 exec_always feh --bg-fill ~/Pictures/wallpaper1.png
 #exec_always feh --bg-fill ~/Pictures/wallpaperX.png
-exec_always caffeinate sleep 9999999999999
+#exec_always caffeinate sleep 9999999999999
 exec_always redshift
 
 smart_gaps on
