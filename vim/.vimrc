@@ -25,6 +25,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'dylanaraps/wal'
 
 call vundle#end()
