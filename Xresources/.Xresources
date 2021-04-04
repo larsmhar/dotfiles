@@ -1,4 +1,5 @@
 *.font: xft:Iosevka:size=14:style=Regular
+Emacs.font: Iosevka
 !!*.font: xft:Source Code Pr:size=14
 URXvt*letterSpace: -2
 
