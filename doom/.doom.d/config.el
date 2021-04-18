@@ -35,6 +35,12 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;; Attemption to set Projectile project, and maybe some more later
+
+(setq
+projectile-project-search-path '("~/Projects")
+)
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;

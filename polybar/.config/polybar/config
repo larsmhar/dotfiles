@@ -310,9 +310,9 @@ ramp-volume-2 = 🔊
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 
-[module/battery1]
+[module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = AC0
 full-at = 98
 
@@ -336,9 +336,10 @@ animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
-[module/battery]
+
+[module/battery1]
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = AC0
 full-at = 98
 
