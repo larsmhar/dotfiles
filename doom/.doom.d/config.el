@@ -33,7 +33,8 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+;; Relative line numering
+(setq display-line-numbers-type 'relative)
 
 ;; Attemption to set Projectile project, and maybe some more later
 
