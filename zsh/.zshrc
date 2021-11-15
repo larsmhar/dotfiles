@@ -105,3 +105,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export XENVIRONMENT="${HOME}/.Xresources"
+
+# For jupyter lab 
+export PATH="$HOME/.local/bin:$PATH"
