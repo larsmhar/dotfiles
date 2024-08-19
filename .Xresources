@@ -1,4 +1,4 @@
-*.font: xft:Iosevka:size=14
+*.font: xft:Iosevka Nerd Font:size=14
 !!*.font: xft:Source Code Pr:size=14
 URXvt*letterSpace: -2
 
